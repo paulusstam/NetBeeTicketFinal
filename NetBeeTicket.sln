@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBeeTicket.BOL", "NetBeeTicket.BOL\NetBeeTicket.BOL.csproj", "{28C03B2E-B7B9-4B0F-8749-164750088A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBeeTicket.DAL", "NetBeeTicket.DAL\NetBeeTicket.DAL.csproj", "{5984A554-2F23-41B6-97ED-4629C3F09E9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28C03B2E-B7B9-4B0F-8749-164750088A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C03B2E-B7B9-4B0F-8749-164750088A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C03B2E-B7B9-4B0F-8749-164750088A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C03B2E-B7B9-4B0F-8749-164750088A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5984A554-2F23-41B6-97ED-4629C3F09E9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5984A554-2F23-41B6-97ED-4629C3F09E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5984A554-2F23-41B6-97ED-4629C3F09E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5984A554-2F23-41B6-97ED-4629C3F09E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
