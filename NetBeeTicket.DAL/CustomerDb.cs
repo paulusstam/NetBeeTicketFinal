@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NetBeeTicket.DAL
 {
-    public class EmployeeDb:DALBase
+    public class CustomerDb:DALBase
     {
         public IEnumerable<Customer> GetALL()
         {
