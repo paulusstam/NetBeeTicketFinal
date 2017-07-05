@@ -13,6 +13,7 @@ namespace NetBeeTicket.DAL
         public NetBeeTicketDBContext():base("NetBeeTicketDB")
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<NetBeeTicketDBContext, NetBeeTicket.DAL.Migrations.Configuration>());
+            Configuration.ProxyCreationEnabled = false;
         }
         public  DbSet<Role> Roles { get; set; }
         public DbSet<Customer> Customers { get; set; }

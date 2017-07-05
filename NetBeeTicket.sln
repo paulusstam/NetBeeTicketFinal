@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBeeTicket.ConsoleUI", "N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBeeTicket.BLL", "NetBeeTicket.BLL\NetBeeTicket.BLL.csproj", "{6CB963E8-587E-40F2-9170-230CF9D9C5A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBeeTicket.API", "NetBeeTicket.API\NetBeeTicket.API.csproj", "{9F0A778C-95C0-4B04-8C04-B9527D99C5A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6CB963E8-587E-40F2-9170-230CF9D9C5A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CB963E8-587E-40F2-9170-230CF9D9C5A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CB963E8-587E-40F2-9170-230CF9D9C5A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F0A778C-95C0-4B04-8C04-B9527D99C5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0A778C-95C0-4B04-8C04-B9527D99C5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0A778C-95C0-4B04-8C04-B9527D99C5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0A778C-95C0-4B04-8C04-B9527D99C5A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
