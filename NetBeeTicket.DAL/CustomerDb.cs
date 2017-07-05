@@ -8,14 +8,8 @@ using System.Threading.Tasks;
 
 namespace NetBeeTicket.DAL
 {
-    public class EmployeeDb
+    public class EmployeeDb:DALBase
     {
-        private NetBeeTicketDBContext db;
-
-        public EmployeeDb()
-        {
-            db = new NetBeeTicketDBContext();
-        }
         public IEnumerable<Customer> GetALL()
         {
             return db.Customers.ToList();

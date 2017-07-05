@@ -8,14 +8,8 @@ using System.Threading.Tasks;
 
 namespace NetBeeTicket.DAL
 {
-    public class RoleDb
+    public class RoleDb:DALBase
     {
-        private NetBeeTicketDBContext db;
-
-        public RoleDb()
-        {
-            db = new NetBeeTicketDBContext();
-        }
         public IEnumerable<Role> GetALL()
         {
             return db.Roles.ToList();
