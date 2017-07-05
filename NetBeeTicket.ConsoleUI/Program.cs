@@ -1,4 +1,4 @@
-﻿using NetBeeTicket.DAL;
+﻿using NetBeeTicket.BLL;
 using NetBeeTicket.BOL;
 using System;
 using System.Collections.Generic;
@@ -12,9 +12,8 @@ namespace NetBeeTicket.ConsoleUI
     {
         static void Main(string[] args)
         {
-            RoleDb R = new RoleDb();
-            R.Insert(new Role() { RoleName = "Admin", RoleCode = "A" });
-            R.Save();
+            RoleBs R = new RoleBs();
+            R.Insert(new Role() { RoleName = "User", RoleCode = "U" });
         }
     }
 }

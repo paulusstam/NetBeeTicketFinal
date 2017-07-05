@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{99F1D948-C9F2-4F6F-AE0B-CCAFA30B09C3}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>NetBeeTicket.ConsoleUI</RootNamespace>
-    <AssemblyName>NetBeeTicket.ConsoleUI</AssemblyName>
+    <ProjectGuid>{6CB963E8-587E-40F2-9170-230CF9D9C5A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetBeeTicket.BLL</RootNamespace>
+    <AssemblyName>NetBeeTicket.BLL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,12 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\NetBeeTicket.DAL\bin\Debug\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\NetBeeTicket.DAL\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,20 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="CustomerBs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleBs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NetBeeTicket.BLL\NetBeeTicket.BLL.csproj">
-      <Project>{6cb963e8-587e-40f2-9170-230cf9d9c5a2}</Project>
-      <Name>NetBeeTicket.BLL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NetBeeTicket.BOL\NetBeeTicket.BOL.csproj">
       <Project>{28c03b2e-b7b9-4b0f-8749-164750088a15}</Project>
       <Name>NetBeeTicket.BOL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetBeeTicket.DAL\NetBeeTicket.DAL.csproj">
+      <Project>{5984a554-2f23-41b6-97ed-4629c3f09e9f}</Project>
+      <Name>NetBeeTicket.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
