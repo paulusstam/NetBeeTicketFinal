@@ -1,10 +1,29 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Welcome to NetBee</title>
-</head>
-<body>
-
-</body>
-</html>
+﻿<div class="well">
+    <input type="text" class="form-control" ng-model="search" placeholder="Search Customers" />
+</div>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Panel primary</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-hover ">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>email</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="emp in ctms |  filter:search">
+                    <td>{{emp.CustomerId}}</td>
+                    <td>{{emp.Email}}</td>
+                    <td>{{emp.FirstName}}</td>
+                    <td>{{emp.LastName}}</td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+</div>
