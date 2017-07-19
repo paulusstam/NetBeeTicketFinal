@@ -11,6 +11,12 @@ namespace NetBeeTicket.BOL
     [Table("Customer")]
     public partial class Customer
     {
+        public Customer()
+        {
+            SubscriptionStartDate = DateTime.Now;
+            RoleId = 4;
+        }
+
         [Key]
         [Column(TypeName = "varchar")]
         [StringLength(50)]

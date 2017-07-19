@@ -3,9 +3,9 @@
     $("#wrapper").toggleClass("active");
 });
 
-var NetBeeTicketAPP = angular.module("NetBeeTicketAPP", ["ngRoute"]);
+var NetBeeTicketAPP = angular.module("NetBeeTicketAPP", ["ngRoute", 'angularUtils.directives.dirPagination']);
 
-NetBeeTicketAPP.config(function ($routeProvider) {
+NetBeeTicketAPP.config(function ($routeProvider, $httpProvider) {
     $routeProvider.when("/Home", { templateUrl: "Views/Shared/Home/Home.html", controller:"homeController" });
     $routeProvider.when("/Login", { templateUrl: "Views/Shared/Login/Login.html", controller: "loginController" });
     $routeProvider.when("/Logout", {  });
