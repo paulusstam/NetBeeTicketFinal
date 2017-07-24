@@ -10,9 +10,9 @@
 }
 
 #sidebar-wrapper {
-    margin-left: -150px;
+    margin-left: -190px;
     left: 22px;
-    width: 150px;
+    width: 200px;
     background: #222;
     position: fixed;
     height: 100%;
@@ -23,7 +23,7 @@
 .sidebar-nav {
     display: block;
     float: left;
-    width: 150px;
+    width: 200px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@
 }
 
     #wrapper.active #sidebar-wrapper {
-        left: 150px;
+        left: 190px;
     }
 
 #page-content-wrapper {
@@ -53,7 +53,7 @@
     display: block;
     float: left;
     text-decoration: none;
-    width: 150px;
+    width: 200px;
     background: #252525;
     border-top: 1px solid #373737;
     border-bottom: 1px solid #1A1A1A;
@@ -111,11 +111,13 @@
 #main_icon {
     float: right;
     padding-top: 20px;
+    padding-right: 7px;
 }
 
 .sub_icon {
     float: right;
-    padding-top: 10px;
+    padding-top: 12px;
+    padding-right: 7px;
 }
 
 .content-header {
