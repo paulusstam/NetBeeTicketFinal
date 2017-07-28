@@ -14,3 +14,20 @@ NetBeeTicketAPP.config(function ($routeProvider, $httpProvider) {
     $routeProvider.when("/CustomerProfile", { templateUrl: "Views/Customer/CustomerUpdate/CustomerUpdate.html", controller: "customerUpdateController" });
     $routeProvider.otherwise({ redirectTo: "/Home" });
 });
+
+NetBeeTicketAPP.factory("utilityService", function () {
+    utilityObj = {};
+
+    utilityObj.randomPassword = function () {
+        return Math.random().toString(36).substr(2, 5);
+    };
+
+    utilityObj.myAlert = function () {
+        $("#alert").fadeTo(2000, 500).slideUp(1000, function () {
+            $("#alert").slideUp(1000);
+
+        });
+    };
+
+    return utilityObj;
+});

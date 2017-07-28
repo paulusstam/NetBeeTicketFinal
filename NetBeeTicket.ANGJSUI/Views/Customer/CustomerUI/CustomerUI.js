@@ -33,7 +33,7 @@
 
 
 
-NetBeeTicketAPP.controller("customerUIController", function ($scope, CustomerUIService) {
+NetBeeTicketAPP.controller("customerUIController", function ($scope, CustomerUIService, utilityService) {
     $scope.message = "Customer CP";
 
     CustomerUIService.getAll().then(function (result) {
@@ -45,10 +45,15 @@ NetBeeTicketAPP.controller("customerUIController", function ($scope, CustomerUIS
         $scope.AscOrDesc = !$scope.AscOrDesc;
     };
     $scope.createCustomer = function (Ctm) {
-        Ctm.Password = Math.random().toString(36).substr(2, 5);
+        Ctm.Password = utilityService.randomPassword();
         CustomerUIService.createCustomer(Ctm).then(function (result) {
-            $scope.message = "You have successfully created " + result.CustomerId;
+            $scope.message = "You have successfully created the Customer with ID: " + result.CustomerId;
             $scope.Flg = true;
+            CustomerUIService.getAll().then(function (result) {
+                $scope.ctms = result;
+        });
+
+            utilityService.myAlert();
         });
     };
 });
